@@ -34,6 +34,12 @@
     },
     "ReferralURL": {
       "type": "string"
+    },
+    "opportunity_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::opportunity-category.opportunity-category",
+      "mappedBy": "opportunity"
     }
   }
 }
